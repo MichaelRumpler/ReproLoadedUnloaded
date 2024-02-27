@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproLoadedUnloaded", "ReproLoadedUnloaded.csproj", "{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04C2464-DAC9-430C-A8AE-B8E003CE49EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82C54051-8169-4FF4-986C-5733A1F10EB9}
+	EndGlobalSection
+EndGlobal

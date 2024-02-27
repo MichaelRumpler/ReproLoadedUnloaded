@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReproLoadedUnloaded"
+             x:Class="ReproLoadedUnloaded.ListViewPage"
+             Title="ListView with Header">
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <ListView ItemsSource="{Binding}">
+                <ListView.Header>
+                    <local:CustomLabel />
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Footer>
+                    <local:CustomLabel />
+                </ListView.Footer>
+            </ListView>
+
+            <Button Text="GC.Collect()" Clicked="GC_Clicked" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

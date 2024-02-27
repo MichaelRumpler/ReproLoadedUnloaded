@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReproLoadedUnloaded"
+             x:Class="ReproLoadedUnloaded.CollectionViewPage"
+             Title="CollectionView with Header">
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <CollectionView ItemsSource="{Binding}">
+                <CollectionView.Header>
+                    <local:CustomLabel />
+                </CollectionView.Header>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding}" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.Footer>
+                    <local:CustomLabel />
+                </CollectionView.Footer>
+            </CollectionView>
+
+            <Button Text="GC.Collect()" Clicked="GC_Clicked" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
